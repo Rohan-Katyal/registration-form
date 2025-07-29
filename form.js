@@ -1,4 +1,5 @@
-const scriptURL = "https://script.google.com/macros/s/AKfycbzodtwm9AuH1SZCnjRMEu1ssKE0NMinHzeaTVAGTwrRdGDu8LMIty60wMHCt0lfJbah7Q/exec"
+document.addEventListener('DOMContentLoaded', function(){
+    const scriptURL = "https://script.google.com/macros/s/AKfycbzodtwm9AuH1SZCnjRMEu1ssKE0NMinHzeaTVAGTwrRdGDu8LMIty60wMHCt0lfJbah7Q/exec"
 
 const logo = document.querySelector('.img-logo');
 
@@ -18,4 +19,5 @@ form.addEventListener('submit', function(event){
 
     window.alert('Form Submitted Succesfully !!');
     window.location.reload();
+})
 })
