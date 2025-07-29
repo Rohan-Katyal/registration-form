@@ -1,4 +1,4 @@
-const scriptURL = 'https://script.google.com/macros/s/AKfycbz4aNzbBD7JVd0PxpslIiMlX3ppi5_yfq1ZFYoP5SQ2IfuXRCkvtXIFk8zjE8AXc9LXoA/exec'
+const scriptURL = "https://script.google.com/macros/s/AKfycbzodtwm9AuH1SZCnjRMEu1ssKE0NMinHzeaTVAGTwrRdGDu8LMIty60wMHCt0lfJbah7Q/exec"
 
 const logo = document.querySelector('.img-logo');
 
