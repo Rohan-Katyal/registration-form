@@ -1,0 +1,241 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+.main-div{
+    background-image: linear-gradient(to bottom, rgb(132, 132, 255),  rgb(186, 83, 255));
+    /* margin: 2vw; */
+    /* padding: 2vw; */
+    /* height:200%; */
+    width: 100%;
+    display: flex;
+    overflow: auto;
+    /* justify-content: center; */
+    flex-direction:column;
+    align-items: center;
+    justify-content:stretch;
+}
+
+
+.img-logo{
+    border-radius: 110%;
+    /* border: 2px solid rgb(35,35,35); */
+    box-shadow: 0px 0px 5vw rgb(35,35,35);
+    margin: 10px;
+    object-fit: cover;
+}
+
+.form-head{
+    background-color: white;
+    margin: 20px 30px 20px 30px;
+    display: flex;
+    align-items: center;
+    justify-content : center;
+    flex-direction: column;
+    padding: 10px;
+    /* border: 2px solid black; */
+    border-radius: 10vw;
+}
+
+.head-text{
+    font-family: Arial, sans-serif;
+    font-size: 8.75vw;
+    color: rgba(0, 0, 0, 0.75);
+    font-style: bold;
+    text-align: center;
+    display: flex;
+    height: 30vh;
+    line-height: 1.5;
+    padding: 5vw;
+    /* border: 3px solid rgb(0, 0, 0); */
+}
+
+.head-label-text{
+    /* border: 3px solid black; */
+    color: rgba(0,0,0,0.6);
+    font-family: sans-serif;
+    font-size: 4.5vw;
+
+    margin: 6vw 4vw;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    text-align: center;
+}
+
+
+/* FROM CSS Styling */
+
+
+.form-div{
+    background-color: white;
+    margin: 20px 30px 20px 30px;
+
+    /* height: max-content; */
+    width: 75%;
+    display: flex;
+    /* align-items: center; */
+    /* justify-content : center; */
+    flex-direction: column;
+    padding: 10px;
+    /* border: 2px solid black; */
+    border-radius: 20px;
+
+    /* overflow:scroll */
+}
+
+.input-span{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: max-content;
+    /* line-height:40px; */
+    /* border: 4px solid black; */
+    padding: 3vw;
+}
+
+.feild-label{
+    font-family:sans-serif;
+    font-size: 5vw;
+    margin: 3.5vw 0px;
+    font-weight: bold;
+    color: rgba(0,0,0,0.75); 
+}
+
+.input-feild{
+    margin: 10px 0px;
+    padding: 3.75vw;
+    border: 2px solid rgba(0,0,0,0.2);
+    border-radius: 10px;
+}
+
+.radio-span{
+    display: flex;
+    flex-direction: column;
+    /* border : 3px solid black; */
+    width: fit-content;
+    margin-right: 4vw;
+    padding: 1vw;
+    font-family: sans-serif;
+    font-size: 4vw;
+    font-weight: bold;
+}
+
+.radio-span > label{
+    margin: 2vw 0px;
+    color: rgba(0,0,0,0.75);
+}
+
+.class-span{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    /* border: 4px solid black; */
+}
+
+
+/* Time slot section */
+
+
+.time-slots-div{
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content:safe; */
+    flex-wrap: wrap;
+    /* align-items: center; */
+    /* box-sizing: border-box; */
+    width: 100%;
+
+}
+
+.time-slots{
+    border: 2px solid rgba(211, 211, 211, 0.95);
+    border-radius: 2vw;
+    /* opacity: 0.8; */
+    padding: 3vw;
+    margin: 2vw 0vw;
+
+    /* width: 90%; */
+    max-width: 100%;
+    display: flex;
+    align-items:flex-start;
+    flex-direction: column;
+    /* width: fit-content; */
+}
+
+/* .time-slots>*{
+    border: 1px solid black;
+} */
+
+.time-slot-label{
+    font-family: sans-serif;
+    font-size: 4vw;
+    margin-top: 3vw;
+    opacity: 0.75;
+}
+
+.disabled{
+    cursor: not-allowed;
+    opacity: 0.55;
+
+}
+
+.disabled > *{
+    cursor: not-allowed;
+}
+
+.full, .available{
+    /* border: 1px solid black; */
+    border-radius: 1vw;
+    padding: 0.75vw 1.75vw;
+    font-size: 4vw;
+    font-family: sans-serif;
+    /* font-weight: 100; */
+    color: white;
+    margin: 10vw 0px 2vw 0px;
+    opacity: 0.8;
+}
+
+.full{
+    background-color: rgb(255, 77, 77);
+}
+
+.available{
+    background-color: rgb(0, 209, 52);
+}
+
+.btn-span{
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 2vh;
+
+}
+.submit-btn{
+    border: 2px solid black;
+    width: 70%;
+    max-width: 100%;
+
+    border: none;
+    border-radius: 2vw;
+    
+    padding: 4vw;
+    margin: 1vw auto;
+
+    color: white;
+    font-size: 4vw;
+    font-weight: bold;
+    text-align: center;
+    
+    background-image: linear-gradient(100deg, rgb(132, 132, 255),  rgb(179, 0, 255));
+    align-self: center;
+    
+}

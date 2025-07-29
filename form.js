@@ -1,5 +1,9 @@
 const scriptURL = 'https://script.google.com/macros/s/AKfycbz4aNzbBD7JVd0PxpslIiMlX3ppi5_yfq1ZFYoP5SQ2IfuXRCkvtXIFk8zjE8AXc9LXoA/exec'
 
+const logo = document.querySelector('.img-logo');
+
+logo.src = 'https://shikshami.in/wp-content/uploads/2025/06/20250618_061724-scaled.jpg';
+
 const form = document.forms['registration-form'];
 
 form.addEventListener('submit', function(event){
@@ -10,7 +14,8 @@ form.addEventListener('submit', function(event){
         body : new FormData(form),
         mode : 'cors',
         cache : 'no-cache'
-    })
+    });
 
+    window.alert('Form Submitted Succesfully !!');
     window.location.reload();
 })
