@@ -6,80 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="form.css" rel="stylesheet" type="text/css">
     <title>Registration Form ShikshaMI</title>
+    
+    
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <script src="inputParserAdapter.js"></script>
 </head>
 
 <body>
-    <div class="main-div">
-        <div class="form-head">
-            <img src="" class="img-logo" alt="shikshami-logo" />
-            <h3 class="head-text">Where Education Meets Excellence.</h3>
-            <label class="head-label-text">Fill in your details to register for classes</label>
-        </div>
-        <div class="form-div">
-            <form name="registration-form" class="registration-form" autocomplete="off" accept-charset="UTF-8">
-                <span class="input-span">
-                    <label class="feild-label" for="name-input">Name *</label>
-                    <input type="text" name="Name" id="name-input" class="input-feild"
-                        placeholder="Enter your name here" required>
-                </span>
-                <span class="input-span">
-                    <label class="feild-label">Class *</label>
-                    <span class="class-span">
-                        <span class="radio-span"><input type="radio" value="9th" class="class-radio" name="Class" required><label>9th</label></span>
-                        <span class="radio-span"><input type="radio" value="10th" class="class-radio" name="Class"><label>10th</label></span>
-                    </span>
-                </span>
-
-                <span class="input-span">
-                    <label class="feild-label" for="contact-input">Contact Number *</label>
-                    <input type="tel" name="ContactNumber" id="contact-input" class="input-feild"
-                    placeholder="Enter 10-digit mobile number" required pattern="\d{10}" maxlength="10">
-
-                </span>
-
-                <span class="input-span">
-                    <label class="feild-label">Available Slots *</label>
-                <div class="time-slots-div">
-                    <span class="time-slots">
-                        <input type="checkbox" value="3 PM" class="time-slots-input available-slot" name="SelectedSlot">
-                        <label class="time-slot-label">3 PM</label>
-                        <label class="time-slot-status available">Available</label>
-                    </span>
-                    <span class="time-slots disabled">
-                        <input type="checkbox" value="4 PM" class="time-slots-input full-slot" disabled>
-                        <label class="time-slot-label">4 PM</label>
-                        <label class="time-slot-status full">Full</label>
-                    </span>
-                    <span class="time-slots disabled">
-                        <input type="checkbox" value="5 PM" class="time-slots-input full-slot" disabled>
-                        <label class="time-slot-label">5 PM</label>
-                        <label class="time-slot-status full">Full</label>
-                    </span>
-                    <span class="time-slots disabled">
-                        <input type="checkbox" value="6 PM" class="time-slots-input full-slot" disabled>
-                        <label class="time-slot-label">6 PM</label>
-                        <label class="time-slot-status full">Full</label>
-                    </span>
-                    <span class="time-slots">
-                        <input type="checkbox" value="7 PM" class="time-slots-input available-slot" name="SelectedSlot">
-                        <label class="time-slot-label">7 PM</label>
-                        <label class="time-slot-status available">Available</label>
-                    </span>
-                    <span class="time-slots">
-                        <input type="checkbox" value="8 PM" class="time-slots-input available-slot" name="SelectedSlot">
-                        <label class="time-slot-label">8 PM</label>
-                        <label class="time-slot-status available">Available</label>
-                    </span>
-                </div>
-                </span>
-
-                <span class="btn-span">
-                    <button class="submit-btn" value="submit" type="submit">Submit Registration</button>
-                </span>
-            </form>
-        </div>
-    </div>
-    <script src="form.js"></script>
+    <div id="root"></div>
+    
 </body>
 
 </html>
