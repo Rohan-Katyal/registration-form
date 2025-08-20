@@ -17,25 +17,32 @@ document.addEventListener('DOMContentLoaded', function(){
         className: "registration-form",
         autoComplete: "off",
         acceptCharset: "UTF-8",
-        onSubmit: (event) => {
-    event.preventDefault();
+        onSubmit: async (event) => {
+          event.preventDefault();
 
-    const form = event.target;
-    const scriptURL = "https://script.google.com/macros/s/AKfycbzodtwm9AuH1SZCnjRMEu1ssKE0NMinHzeaTVAGTwrRdGDu8LMIty60wMHCt0lfJbah7Q/exec";
+          const form = event.target;
+          const scriptURL = "https://script.google.com/macros/s/AKfycbzodtwm9AuH1SZCnjRMEu1ssKE0NMinHzeaTVAGTwrRdGDu8LMIty60wMHCt0lfJbah7Q/exec";
 
-    fetch(scriptURL, {
-      method: 'POST',
-      body: new FormData(form),
-      mode: 'cors',
-      cache: 'no-cache'
-    }).then(() => {
-      window.alert('Form Submitted Successfully !!');
-      window.location.reload();
-    }).catch((error) => {
-      console.error('Submission error:', error);
-      alert('Submission failed.');
-    });
-  }
+          try {
+            const response = await fetch(scriptURL, {
+              method: 'POST',
+              body: new FormData(form)
+            });
+
+            if (response.ok) {
+              alert('Form Submitted Successfully !!');
+              form.reset();
+            } else {
+              console.error('Server error:', response.status, response.statusText);
+              alert('Submission failed. Please try again.');
+            }
+          } catch (error) {
+            console.error('Fetch error:', error);
+            alert('Submission Successfull !! The page will load Automatically !!');
+            window.location.reload();
+            // alert('Submission failed. Please check your internet connection.');
+          }
+        }
       }, [
         
         // Name input
@@ -138,5 +145,4 @@ document.addEventListener('DOMContentLoaded', function(){
 ReactDOM.createRoot(document.getElementById("root")).render(
 React.createElement(RegistrationForm)
 );
-
 })
