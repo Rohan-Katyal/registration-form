@@ -2,9 +2,9 @@
 
 *This github repository consists of 4 main files :*
 
-1 -> **form.html**\n
-2 -> **form.css**\n
-3 -> **inputParserAdapter.js**\n
+1 -> **form.html**/n
+2 -> **form.css**/n
+3 -> **inputParserAdapter.js**/n
 
 These files contains all the logics and the relevant codes reuired for the formpage,
 
