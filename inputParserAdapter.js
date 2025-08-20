@@ -104,7 +104,7 @@ document.addEventListener('DOMContentLoaded', function(){
           React.createElement("label", { className: "feild-label" }, "Available Slots *"),
           React.createElement("div", { className: "time-slots-div" }, [
 
-            ["3 PM", true],
+            ["3 PM", false],
             ["4 PM", false],
             ["5 PM", false],
             ["6 PM", false],
